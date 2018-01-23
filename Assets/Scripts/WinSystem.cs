@@ -26,9 +26,7 @@ public class WinSystem : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-
             startGame = true;
-
         }
 
         if (startGame)
@@ -53,7 +51,7 @@ public class WinSystem : MonoBehaviour {
         scoreText.text = score.ToString("");
         
 
-        score = 3;
+        score = 0;
 
 
 

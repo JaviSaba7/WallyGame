@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - Kill
+  - Monkey
   layers:
   - Default
   - TransparentFX

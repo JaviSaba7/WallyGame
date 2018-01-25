@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine.UI;
-public class WinSystem : MonoBehaviour {
+
+public class GameSystem : MonoBehaviour {
 
     public float timeToStart = 3.0f;
     public float timeofGame = 30.0f;
@@ -18,7 +19,7 @@ public class WinSystem : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-		
+        score = 0;
 	}
 	
 	// Update is called once per frame
@@ -50,12 +51,7 @@ public class WinSystem : MonoBehaviour {
 
         scoreText.text = score.ToString("");
         
-
-        score = 0;
-
-
-
-
+        
         if (timeOfGame == 0) Debug.Log("YOU WIN!");
       
     }

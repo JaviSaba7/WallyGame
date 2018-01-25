@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Swipe.unity
+- path: Assets/WallyGame.unity
   isLoaded: 1
   isActive: 1

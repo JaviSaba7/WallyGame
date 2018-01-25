@@ -219,9 +219,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Detectclick.cs" />
+    <Compile Include="Assets\Scripts\Detection.cs" />
+    <Compile Include="Assets\Scripts\DetectMonkey.cs" />
+    <Compile Include="Assets\Scripts\DetectOut.cs" />
     <Compile Include="Assets\Scripts\DrawPath.cs" />
-    <Compile Include="Assets\Scripts\WinSystem.cs" />
+    <Compile Include="Assets\Scripts\GameSystem.cs" />
+    <Compile Include="Assets\Scripts\MaterialSwitcher.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

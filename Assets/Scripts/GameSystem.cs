@@ -15,6 +15,7 @@ public class GameSystem : MonoBehaviour {
     public bool startGame;
     public bool startToPlay;
 
+    public Distribution distribution;
     public float timeOfGame = 30.0f;
     // Use this for initialization
     void Start ()
@@ -28,6 +29,7 @@ public class GameSystem : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.S))
         {
             startGame = true;
+            distribution.Distribute();
         }
 
         if (startGame)

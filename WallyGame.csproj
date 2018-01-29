@@ -219,6 +219,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Distribution.cs" />
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\DetectMonkey.cs" />
     <Compile Include="Assets\Scripts\DetectOut.cs" />

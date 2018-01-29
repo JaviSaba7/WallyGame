@@ -8,6 +8,8 @@ public class Detection : MonoBehaviour
     public bool detectingMonkey;
     public GameSystem management;
     public MaterialSwitcher matSwitcher;
+    public Distribution distribution;
+
     // Use this for initialization
     void Start()
     {
@@ -38,7 +40,9 @@ public class Detection : MonoBehaviour
             {
                 Debug.Log("WIN!");
                 management.score += 1;
-                matSwitcher.matRandom = Random.Range(0, 3);
+                matSwitcher.matRandom = Random.Range(0, 6);
+                distribution.Distribute();
+
 
             }
         }

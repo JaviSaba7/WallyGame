@@ -1,73 +1,56 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Distribution : MonoBehaviour {
 
-    public Vector3[] positions;
-    public SpriteRenderer[] sprites;
-    public Sprite[] Sprites;
+    //public Vector3[] positions;
+
+    public Image[] Players_images;
+
+    public List<Sprite> Sprites;
+
+    public Image[] Monkeys;
+
     // Use this for initialization
     void Start()
     {
-        //sprites[0].transform.position = positions[0];
-        //sprites[1].transform.position = positions[1];
-        //sprites[2].transform.position = positions[2];
-
-        //sprites[Random.Range(0, 3)].transform.position = positions[0];
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-    }
-
-    public void Distribute()
-    {
-        sprites[0].sprite = Sprites[Random.Range(0, 4)];
-        sprites[1].sprite = Sprites[Random.Range(0, 4)];
-        sprites[2].sprite = Sprites[Random.Range(0, 4)];
-        //sprites[3].sprite = Sprites[Random.Range(0, 4)];
-
-
 
     }
-    /*
-    public GameObject image1;
-    public GameObject image2;
-    public GameObject image3;
-    public GameObject monkey;
 
-    public Vector3[] positions = new Vector3[4];
-
-    // Use this for initialization
-    void Start ()
+    public void EnableOneRandom()
     {
-        positions[0] = new Vector3(-42, -26, 180);
-        positions[1] = new Vector3(-27, 63, 180);
-        positions[2] = new Vector3(37, 9, 180);
-        //positions[3] = new Vector3(32, -26, 180);
+        for (int k = 0; k < 1; k++)
+        {
+            Monkeys[Random.Range(0, 20)].gameObject.SetActive(true);
+        }
+    }
+    public void DisableAll()
+    {
+        for (int k = 0; k < 20; k++)
+        {
+            Monkeys[k].gameObject.SetActive(false);
+        }
+    }
+    
+    public void Randomize()
+    {
+        for (int i = 0; i < Players_images.Length; i++)
+        {
+            int rdm = Random.Range(0, Sprites.Count);
+            Players_images[i].sprite = Sprites[rdm];
+        }
+        DisableAll();
+        EnableOneRandom();
+        Debug.Log("Randomize");
 
-        image1.transform.position = new Vector3(0, 0, 200);
-        image2.transform.position = new Vector3(0, 0,200);
-        image3.transform.position = new Vector3(0, 0, 200);
-        monkey.transform.position = new Vector3(0, 0, 200);
     }
 
-    // Update is called once per frame
-    void Update ()
-    {
-		
-	}
-
-    public void Distribute()
-    {
-        monkey.transform.position = positions[Random.Range(0, 3)];
-        image1.transform.position = positions[Random.Range(0, 3)];
-        image2.transform.position = positions[Random.Range(0, 3)];
-        image3.transform.position = positions[Random.Range(0, 3)];
-
-    }*/
 }

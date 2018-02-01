@@ -14,27 +14,23 @@ public class GameSystem : MonoBehaviour {
     public Text gameTimeText;
     public bool startGame;
     public bool startToPlay;
-
+    public GameObject characters;
     public Distribution distribution;
     public float timeOfGame = 30.0f;
     // Use this for initialization
     void Start ()
     {
         score = 0;
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            startGame = true;
-            distribution.Distribute();
-        }
+        distribution.Randomize();
+        startGame = true;
+    }
 
+    // Update is called once per frame
+    void Update ()
+    {
         if (startGame)
         {
-            counterToStartText.text = timeToStart.ToString("0") + "s";
+            counterToStartText.text = timeToStart.ToString("0");
             timeToStart -= Time.deltaTime;
         }
 
@@ -49,12 +45,12 @@ public class GameSystem : MonoBehaviour {
         {
             gameTimeText.text = timeofGame.ToString("0");
             timeofGame -= Time.deltaTime;
+            characters.SetActive(true);
         }
 
         scoreText.text = score.ToString("");
-        
-        
-        if (timeOfGame == 0) Debug.Log("YOU WIN!");
+
+
       
     }
 }

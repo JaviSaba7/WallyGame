@@ -226,6 +226,9 @@
     <Compile Include="Assets\Scripts\DrawPath.cs" />
     <Compile Include="Assets\Scripts\GameSystem.cs" />
     <Compile Include="Assets\Scripts\MaterialSwitcher.cs" />
+    <Compile Include="Assets\Scripts\OnClickMonkey.cs" />
+    <Compile Include="Assets\Scripts\OnClickPlayer.cs" />
+    <Compile Include="Assets\Scripts\Reset.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

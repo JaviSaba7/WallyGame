@@ -4,12 +4,6 @@ using UnityEngine.UI;
 
 public class Detection : MonoBehaviour
 {
-    public Camera camera;
-    public bool detectingMonkey;
-    public GameSystem management;
-    public MaterialSwitcher matSwitcher;
-    public Distribution distribution;
-
     // Use this for initialization
     void Start()
     {
@@ -19,5 +13,6 @@ public class Detection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
 }

@@ -6,6 +6,27 @@ using UnityEngine.UI;
 
 public class GameSystem : MonoBehaviour {
 
+    private static GameSystem _instance;
+    public static GameSystem Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<GameSystem>();
+
+                if (_instance == null)
+                {
+                    GameObject go = new GameObject();
+                    go.name = "GameSystem";
+                    _instance = go.AddComponent<GameSystem>();
+                }
+            }
+
+            return _instance;
+        }
+    }
+
     public float timeToStart = 3.0f;
     public float timeofGame = 30.0f;
     public float score;
@@ -17,6 +38,7 @@ public class GameSystem : MonoBehaviour {
     public GameObject characters;
     public Distribution distribution;
     public float timeOfGame = 30.0f;
+    
     // Use this for initialization
     void Start ()
     {
@@ -50,7 +72,14 @@ public class GameSystem : MonoBehaviour {
 
         scoreText.text = score.ToString("");
 
+    }
 
-      
+    public void MonkeyClicked()
+    {
+        Debug.Log("Clicked on a monkey");
+
+        distribution.Randomize();
+        score += 1;
     }
 }
+    

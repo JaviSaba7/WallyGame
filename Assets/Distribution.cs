@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Distribution : MonoBehaviour {
 
-    //public Vector3[] positions;
 
     public Image[] Players_images;
 
@@ -49,7 +48,7 @@ public class Distribution : MonoBehaviour {
         }
         DisableAll();
         EnableOneRandom();
-        Debug.Log("Randomize");
+        Debug.Log("Random players and monkeys");
 
     }
 

@@ -900,7 +900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &40449712
 RectTransform:
   m_ObjectHideFlags: 0
@@ -908,8 +908,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 40449711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 475, y: 895, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 12, y: 37, z: 0}
+  m_LocalScale: {x: 2.2956533, y: 2.2956533, z: 2.2956533}
   m_Children:
   - {fileID: 931663507}
   m_Father: {fileID: 248084238}
@@ -917,8 +917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 475, y: 895}
-  m_SizeDelta: {x: 106.97, y: 97.6}
+  m_AnchoredPosition: {x: 12, y: 37}
+  m_SizeDelta: {x: 212.24, y: 66.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40449713
 MonoBehaviour:
@@ -6302,7 +6302,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248084234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 199.5, y: 319.5, z: 0}
+  m_LocalPosition: {x: 540, y: 960, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1939820593}
@@ -12797,7 +12797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &504660793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22835,7 +22835,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: R
+  m_Text: Reset
 --- !u!222 &931663509
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31778,7 +31778,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343804240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 257.5, y: -582.15015, z: 13.959404}
+  m_LocalPosition: {x: 257.5, y: -582.1501, z: 13.959404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 389066537}
@@ -43934,7 +43934,7 @@ MonoBehaviour:
   startToPlay: 0
   characters: {fileID: 504660792}
   distribution: {fileID: 2042900559}
-  timeOfGame: 30
+  reset: {fileID: 40449711}
 --- !u!4 &2042900557
 Transform:
   m_ObjectHideFlags: 0

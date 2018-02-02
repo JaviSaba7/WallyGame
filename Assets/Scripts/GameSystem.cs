@@ -37,8 +37,7 @@ public class GameSystem : MonoBehaviour {
     public bool startToPlay;
     public GameObject characters;
     public Distribution distribution;
-    public float timeOfGame = 30.0f;
-    
+    public GameObject reset;
     // Use this for initialization
     void Start ()
     {
@@ -61,6 +60,8 @@ public class GameSystem : MonoBehaviour {
             counterToStartText.enabled = false;
             gameTimeText.enabled = true;
             startToPlay = true;
+            timeToStart = 3;
+            startGame = false;
         }
 
         if(startToPlay)
@@ -68,6 +69,15 @@ public class GameSystem : MonoBehaviour {
             gameTimeText.text = timeofGame.ToString("0");
             timeofGame -= Time.deltaTime;
             characters.SetActive(true);
+            
+        }
+
+        if (timeofGame < 0.0f)
+        {
+            timeofGame = 0.0f;
+            reset.SetActive(true);
+            //characters.SetActive(false);
+
         }
 
         scoreText.text = score.ToString("");

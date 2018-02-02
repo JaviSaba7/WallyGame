@@ -1006,6 +1006,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 40449711}
+--- !u!224 &42921154 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+    type: 2}
+  m_PrefabInternal: {fileID: 392756425}
 --- !u!1 &43867259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1902,7 @@ GameObject:
   - component: {fileID: 80109766}
   - component: {fileID: 80109765}
   - component: {fileID: 80109767}
+  - component: {fileID: 80109768}
   m_Layer: 0
   m_Name: MONO copia 3
   m_TagString: Untagged
@@ -2007,6 +2013,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &80109768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 80109763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &84791758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,6 +2146,7 @@ GameObject:
   - component: {fileID: 89897227}
   - component: {fileID: 89897226}
   - component: {fileID: 89897228}
+  - component: {fileID: 89897229}
   m_Layer: 0
   m_Name: MONO copia 16
   m_TagString: Untagged
@@ -2238,6 +2257,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &89897229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 89897224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &105747468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4119,6 +4150,7 @@ GameObject:
   - component: {fileID: 187291362}
   - component: {fileID: 187291361}
   - component: {fileID: 187291363}
+  - component: {fileID: 187291364}
   m_Layer: 0
   m_Name: MONO copia 18
   m_TagString: Untagged
@@ -4229,6 +4261,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &187291364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 187291359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &191542225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4680,6 +4724,7 @@ GameObject:
   - component: {fileID: 196423655}
   - component: {fileID: 196423654}
   - component: {fileID: 196423656}
+  - component: {fileID: 196423657}
   m_Layer: 0
   m_Name: MONO copia 10
   m_TagString: Untagged
@@ -4790,6 +4835,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &196423657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 196423652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &204081480
 GameObject:
   m_ObjectHideFlags: 0
@@ -6311,6 +6368,7 @@ RectTransform:
   - {fileID: 1031764717}
   - {fileID: 1412596156}
   - {fileID: 40449712}
+  - {fileID: 42921154}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8010,6 +8068,7 @@ MonoBehaviour:
   - {fileID: 1547096920}
   - {fileID: 1647787959}
   management: {fileID: 2042900556}
+  particle: {fileID: 928900072}
 --- !u!1 &299759250
 GameObject:
   m_ObjectHideFlags: 0
@@ -8791,6 +8850,7 @@ GameObject:
   - component: {fileID: 332500762}
   - component: {fileID: 332500761}
   - component: {fileID: 332500763}
+  - component: {fileID: 332500764}
   m_Layer: 0
   m_Name: MONO copia 5
   m_TagString: Untagged
@@ -8901,6 +8961,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &332500764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332500759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &336669378
 GameObject:
   m_ObjectHideFlags: 0
@@ -9353,6 +9425,7 @@ GameObject:
   - component: {fileID: 360539920}
   - component: {fileID: 360539922}
   - component: {fileID: 360539923}
+  - component: {fileID: 360539924}
   m_Layer: 0
   m_Name: MONO copia
   m_TagString: Untagged
@@ -9474,6 +9547,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
+--- !u!114 &360539924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 360539918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &361962797
 GameObject:
   m_ObjectHideFlags: 0
@@ -9485,6 +9571,7 @@ GameObject:
   - component: {fileID: 361962800}
   - component: {fileID: 361962799}
   - component: {fileID: 361962801}
+  - component: {fileID: 361962802}
   m_Layer: 0
   m_Name: MONO copia 8
   m_TagString: Untagged
@@ -9595,6 +9682,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &361962802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361962797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &365206834
 GameObject:
   m_ObjectHideFlags: 0
@@ -10027,7 +10126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &389066537
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10470,6 +10569,157 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 389066536}
+--- !u!1001 &392756425
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 248084238}
+    m_Modifications:
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -48.452515
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -48.452515
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224187773568890412, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 199946634163229260, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114570436083559396, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114261482062348264, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114730700223601784, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199061590703138942, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199888987245699378, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 199946634163229260, guid: b5dc747e554dc5a498e18c8b08a49643,
+        type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646854250553106, guid: b5dc747e554dc5a498e18c8b08a49643, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1470337220321808, guid: b5dc747e554dc5a498e18c8b08a49643, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734757769116978, guid: b5dc747e554dc5a498e18c8b08a49643, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561819083085968, guid: b5dc747e554dc5a498e18c8b08a49643, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b5dc747e554dc5a498e18c8b08a49643, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &394531714
 GameObject:
   m_ObjectHideFlags: 0
@@ -15051,6 +15301,7 @@ GameObject:
   - component: {fileID: 588774874}
   - component: {fileID: 588774873}
   - component: {fileID: 588774875}
+  - component: {fileID: 588774876}
   m_Layer: 0
   m_Name: MONO copia 14
   m_TagString: Untagged
@@ -15161,6 +15412,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &588774876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 588774871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &594778746
 GameObject:
   m_ObjectHideFlags: 0
@@ -17152,6 +17415,7 @@ GameObject:
   - component: {fileID: 659456299}
   - component: {fileID: 659456298}
   - component: {fileID: 659456300}
+  - component: {fileID: 659456301}
   m_Layer: 0
   m_Name: MONO copia 20
   m_TagString: Untagged
@@ -17248,20 +17512,21 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 659456298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &659456301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 659456296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &661164497
 GameObject:
   m_ObjectHideFlags: 0
@@ -18813,6 +19078,7 @@ GameObject:
   - component: {fileID: 750469015}
   - component: {fileID: 750469014}
   - component: {fileID: 750469016}
+  - component: {fileID: 750469017}
   m_Layer: 0
   m_Name: MONO copia 17
   m_TagString: Untagged
@@ -18923,6 +19189,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &750469017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 750469012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &758252753
 GameObject:
   m_ObjectHideFlags: 0
@@ -21220,12 +21498,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material:
-  - {fileID: 2100000, guid: 70de97e7056e1fa4db3a7b7b0291dcaa, type: 2}
-  - {fileID: 2100000, guid: 32037429fcabc894cb482793715bf5ee, type: 2}
-  - {fileID: 2100000, guid: 4ffb18dcdabb9a641a388bd1659da9b7, type: 2}
-  - {fileID: 2100000, guid: 7219b9698c97c594d82378cbdb20d243, type: 2}
-  - {fileID: 2100000, guid: 80a0ea8701450d344b001aaff072c945, type: 2}
-  - {fileID: 2100000, guid: 93b226f52d672374c89086e2f40a1c91, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   rend: {fileID: 0}
   matRandom: 0
 --- !u!1 &859885434
@@ -22768,6 +23046,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &928900072 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1561819083085968, guid: b5dc747e554dc5a498e18c8b08a49643,
+    type: 2}
+  m_PrefabInternal: {fileID: 392756425}
 --- !u!1 &931663506
 GameObject:
   m_ObjectHideFlags: 0
@@ -27892,6 +28175,7 @@ GameObject:
   - component: {fileID: 1163209373}
   - component: {fileID: 1163209372}
   - component: {fileID: 1163209374}
+  - component: {fileID: 1163209375}
   m_Layer: 0
   m_Name: MONO copia 2
   m_TagString: Untagged
@@ -28002,6 +28286,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1163209375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163209370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &1167912270
 GameObject:
   m_ObjectHideFlags: 0
@@ -29003,6 +29299,7 @@ GameObject:
   - component: {fileID: 1215157743}
   - component: {fileID: 1215157742}
   - component: {fileID: 1215157744}
+  - component: {fileID: 1215157745}
   m_Layer: 0
   m_Name: MONO copia 6
   m_TagString: Untagged
@@ -29113,6 +29410,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1215157745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1215157740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &1220068387
 GameObject:
   m_ObjectHideFlags: 0
@@ -34159,6 +34468,7 @@ GameObject:
   - component: {fileID: 1483592003}
   - component: {fileID: 1483592002}
   - component: {fileID: 1483592004}
+  - component: {fileID: 1483592005}
   m_Layer: 0
   m_Name: MONO copia 7
   m_TagString: Untagged
@@ -34269,6 +34579,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1483592005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483592000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &1485948885
 GameObject:
   m_ObjectHideFlags: 0
@@ -34940,6 +35262,7 @@ GameObject:
   - component: {fileID: 1517075398}
   - component: {fileID: 1517075397}
   - component: {fileID: 1517075399}
+  - component: {fileID: 1517075400}
   m_Layer: 0
   m_Name: MONO copia 11
   m_TagString: Untagged
@@ -35050,6 +35373,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1517075400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1517075395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &1518452568
 GameObject:
   m_ObjectHideFlags: 0
@@ -39608,6 +39943,7 @@ GameObject:
   - component: {fileID: 1774248432}
   - component: {fileID: 1774248431}
   - component: {fileID: 1774248433}
+  - component: {fileID: 1774248434}
   m_Layer: 0
   m_Name: MONO copia 15
   m_TagString: Untagged
@@ -39718,6 +40054,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1774248434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774248429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &1778430295
 GameObject:
   m_ObjectHideFlags: 0
@@ -40059,6 +40407,7 @@ GameObject:
   - component: {fileID: 1797096506}
   - component: {fileID: 1797096505}
   - component: {fileID: 1797096507}
+  - component: {fileID: 1797096508}
   m_Layer: 0
   m_Name: MONO copia 9
   m_TagString: Untagged
@@ -40169,6 +40518,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1797096508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797096503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &1809129247
 GameObject:
   m_ObjectHideFlags: 0
@@ -41060,6 +41421,7 @@ GameObject:
   - component: {fileID: 1850292239}
   - component: {fileID: 1850292238}
   - component: {fileID: 1850292240}
+  - component: {fileID: 1850292241}
   m_Layer: 0
   m_Name: MONO copia 19
   m_TagString: Untagged
@@ -41159,6 +41521,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1850292241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1850292236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &1856262597
 GameObject:
   m_ObjectHideFlags: 0
@@ -42050,6 +42424,7 @@ GameObject:
   - component: {fileID: 1909924158}
   - component: {fileID: 1909924157}
   - component: {fileID: 1909924159}
+  - component: {fileID: 1909924160}
   m_Layer: 0
   m_Name: MONO copia 12
   m_TagString: Untagged
@@ -42160,6 +42535,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1909924160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909924155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &1917667203
 GameObject:
   m_ObjectHideFlags: 0
@@ -42404,7 +42791,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1939820592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 265.1, y: 868, z: -34}
+  m_LocalPosition: {x: 280, y: 868, z: -34}
   m_LocalScale: {x: 3.9178677, y: 3.9178674, z: 3.9178674}
   m_Children: []
   m_Father: {fileID: 248084238}
@@ -42412,7 +42799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 265.1, y: 868}
+  m_AnchoredPosition: {x: 280, y: 868}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939820594
@@ -42905,6 +43292,7 @@ GameObject:
   - component: {fileID: 1994759636}
   - component: {fileID: 1994759635}
   - component: {fileID: 1994759637}
+  - component: {fileID: 1994759638}
   m_Layer: 0
   m_Name: MONO copia 4
   m_TagString: Untagged
@@ -43015,6 +43403,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1994759638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1994759633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &2000448441
 GameObject:
   m_ObjectHideFlags: 0
@@ -46285,6 +46685,7 @@ GameObject:
   - component: {fileID: 2133577911}
   - component: {fileID: 2133577910}
   - component: {fileID: 2133577912}
+  - component: {fileID: 2133577913}
   m_Layer: 0
   m_Name: MONO copia 13
   m_TagString: Untagged
@@ -46395,6 +46796,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2133577913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2133577908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7751ea849de6adb4a8e594ca6f11a72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigButton: {fileID: 0}
 --- !u!1 &2135528003
 GameObject:
   m_ObjectHideFlags: 0

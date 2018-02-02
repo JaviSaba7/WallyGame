@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameSystem : MonoBehaviour {
 
     private static GameSystem _instance;
+
     public static GameSystem Instance
     {
         get

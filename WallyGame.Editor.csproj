@@ -294,6 +294,19 @@
     <Compile Include="Assets\PSD Layout Tool\Editor\PsdFile\RleHelper.cs" />
     <Compile Include="Assets\PSD Layout Tool\Editor\PsdImporter.cs" />
     <Compile Include="Assets\PSD Layout Tool\Editor\PsdInspector.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\AccordionElementEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\BezierLineRendererEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\BoxSliderEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\CanvasGroupActivator.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\CUIBezierCurveEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\CUIGraphicEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\CUIImageEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\CUITextEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\NonDrawingGraphicEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\ReadOnlyDrawer.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\TextPicEditor.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\uGUITools.cs" />
+    <Compile Include="Assets\unity-ui-extensions\Editor\UIExtensionsMenuOptions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

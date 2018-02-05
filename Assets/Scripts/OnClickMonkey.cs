@@ -7,6 +7,9 @@ public class OnClickMonkey : MonoBehaviour
     public Button[] button;
     public GameSystem management;
     public Distribution distribution;
+    public GameObject particleWin;
+    public float counter = 0;
+    public bool turnOff = false;
     void Start()
     {
         for(int i = 0; i < 20; i++)
@@ -18,8 +21,15 @@ public class OnClickMonkey : MonoBehaviour
 
     void MonkeyClicked()
     {
-        Debug.Log("Clicked on a monkey");
-        distribution.Randomize();
-        management.score += 1;
+
     }
+
+    void Update()
+    {
+
+        
+        
+    }
+
+
 }

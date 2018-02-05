@@ -11,6 +11,9 @@ public class Distribution : MonoBehaviour {
 
     public Image[] Monkeys;
 
+    public GameObject BigButtonPrefab;
+   
+
     // Use this for initialization
     void Start()
     {
@@ -28,14 +31,14 @@ public class Distribution : MonoBehaviour {
     {
         for (int k = 0; k < 1; k++)
         {
-            Monkeys[Random.Range(0, 20)].gameObject.SetActive(true);
+            Monkeys[Random.Range(0, 20)].GetComponent<Monkey>().SetChosen(BigButtonPrefab);
         }
     }
     public void DisableAll()
     {
         for (int k = 0; k < 20; k++)
         {
-            Monkeys[k].gameObject.SetActive(false);
+            Monkeys[k].GetComponent<Monkey>().SetNotChosen();
         }
     }
     

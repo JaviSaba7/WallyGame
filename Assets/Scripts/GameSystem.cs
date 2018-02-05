@@ -39,6 +39,10 @@ public class GameSystem : MonoBehaviour {
     public GameObject characters;
     public Distribution distribution;
     public GameObject reset;
+
+    public float counter;
+    public bool turnOff = false;
+    public GameObject particleWin;
     // Use this for initialization
     void Start ()
     {
@@ -50,6 +54,16 @@ public class GameSystem : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+        if (turnOff) counter++;
+        if (counter > 60)
+        {
+            particleWin.SetActive(false);
+            Debug.Log("TIME PASADO");
+
+            counter = 0;
+            turnOff = false;
+        }
+
         if (startGame)
         {
             counterToStartText.text = timeToStart.ToString("0");
@@ -88,7 +102,8 @@ public class GameSystem : MonoBehaviour {
     public void MonkeyClicked()
     {
         Debug.Log("Clicked on a monkey");
-
+        particleWin.SetActive(true);
+        turnOff = true;
         distribution.Randomize();
         score += 1;
     }

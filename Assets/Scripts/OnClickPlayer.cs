@@ -6,7 +6,9 @@ public class OnClickPlayer : MonoBehaviour
 {
     public Button[] button;
     public GameSystem management;
-    public GameObject particle;
+    public GameObject particleLose;
+    public float counter;
+    public bool turnOff = false;
     void Start()
     {
         for (int i = 0; i < 370; i++)
@@ -20,6 +22,22 @@ public class OnClickPlayer : MonoBehaviour
     {
         Debug.Log("Clicked on a player");
         management.timeofGame -= 1;
-        particle.SetActive(true);
+        particleLose.SetActive(true);
+        turnOff = true;
     }
+    void Update()
+    {
+
+        if (turnOff) counter++;
+        if (counter > 60)
+        {
+            particleLose.SetActive(false);
+            Debug.Log("TIME PASADO");
+
+            counter = 0;
+            turnOff = false;
+        }
+
+    }
+
 }

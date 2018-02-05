@@ -7,8 +7,9 @@ public class Monkey : MonoBehaviour {
     public MonkeyBigButton BigButton;
 	// Use this for initialization
 	void Start () {
-		
-	}
+        BigButton = null;
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -29,8 +30,9 @@ public class Monkey : MonoBehaviour {
 
     public void SetNotChosen()
     {
+        if (BigButton != null) Destroy(BigButton.gameObject);
         gameObject.SetActive(false);
-        if (BigButton != null) Destroy(BigButton.gameObject); 
+        
     }
 
     public void SetChosen(GameObject prefab)

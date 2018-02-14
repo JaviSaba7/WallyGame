@@ -11,7 +11,6 @@ using UnityEngine.EventSystems;
 
 namespace UnityEngine.UI.Extensions
 {
-    [AddComponentMenu("UI/Extensions/UI ScrollTo Selection XY")]
     [RequireComponent(typeof(ScrollRect))]
     public class UIScrollToSelectionXY : MonoBehaviour
     {

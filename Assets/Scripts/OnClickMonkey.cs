@@ -12,7 +12,7 @@ public class OnClickMonkey : MonoBehaviour
     public bool turnOff = false;
     void Start()
     {
-        for(int i = 0; i < 20; i++)
+        for(int i = 0; i < 19; i++)
         {
             button[i].onClick.AddListener(MonkeyClicked);
 

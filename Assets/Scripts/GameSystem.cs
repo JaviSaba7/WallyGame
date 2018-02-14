@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameSystem : MonoBehaviour {
 
@@ -31,9 +32,9 @@ public class GameSystem : MonoBehaviour {
     public float timeToStart = 3.0f;
     public float timeofGame = 30.0f;
     public float score;
-    public Text scoreText;
-    public Text counterToStartText;
-    public Text gameTimeText;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI counterToStartText;
+    public TextMeshProUGUI gameTimeText;
     public bool startGame;
     public bool startToPlay;
     public GameObject characters;

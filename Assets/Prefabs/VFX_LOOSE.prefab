@@ -56,7 +56,6 @@ GameObject:
   - component: {fileID: 198170298117494052}
   - component: {fileID: 199061590703138942}
   - component: {fileID: 222997988205811296}
-  - component: {fileID: 114730700223601784}
   m_Layer: 5
   m_Name: VFX_TEXT_1
   m_TagString: Untagged
@@ -75,7 +74,6 @@ GameObject:
   - component: {fileID: 198140887125704218}
   - component: {fileID: 199888987245699378}
   - component: {fileID: 222723491717525568}
-  - component: {fileID: 114261482062348264}
   m_Layer: 5
   m_Name: SmokeSmall
   m_TagString: Untagged
@@ -83,26 +81,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114261482062348264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1734757769116978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5f85388e938d9e4599afc6d9441ed57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: d15943170be059441b42140069de410c, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  fixedTime: 1
 --- !u!114 &114570436083559396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,33 +94,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: d15943170be059441b42140069de410c, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  fixedTime: 1
---- !u!114 &114730700223601784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1646854250553106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5f85388e938d9e4599afc6d9441ed57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: a4f63e19debcf8948b25c306428eb9de, type: 2}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  fixedTime: 1
+  particleTexture: {fileID: 0}
+  particleSprite: {fileID: 0}
 --- !u!198 &198140887125704218
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -202,8 +161,8 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 0
-  randomSeed: 2057607835
+  scalingMode: 1
+  randomSeed: 299590419
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3608,8 +3567,8 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 0
-  randomSeed: 1420305986
+  scalingMode: 1
+  randomSeed: 1688912282
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7032,8 +6991,8 @@ ParticleSystem:
       m_RotationOrder: 4
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
-  scalingMode: 0
-  randomSeed: 2131738935
+  scalingMode: 1
+  randomSeed: 2005309953
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10386,7 +10345,7 @@ ParticleSystemRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1646854250553106}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10440,7 +10399,7 @@ ParticleSystemRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734757769116978}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10494,7 +10453,7 @@ ParticleSystemRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1561819083085968}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10502,7 +10461,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: c99a8bae996f9dd419add23752b8431c, type: 2}
+  - {fileID: 0}
   - {fileID: 2100000, guid: c99a8bae996f9dd419add23752b8431c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -10567,7 +10526,7 @@ RectTransform:
   m_GameObject: {fileID: 1646854250553106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 40, y: 30.499628, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 224187773568890412}
   m_RootOrder: 0
@@ -10583,8 +10542,8 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1470337220321808}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224024265853069196}
@@ -10606,7 +10565,7 @@ RectTransform:
   m_GameObject: {fileID: 1734757769116978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 40, y: 40, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 224187773568890412}
   m_RootOrder: 1
@@ -10624,7 +10583,7 @@ RectTransform:
   m_GameObject: {fileID: 1561819083085968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 40, y: 40, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 224187773568890412}
   m_RootOrder: 2

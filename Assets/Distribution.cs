@@ -29,14 +29,15 @@ public class Distribution : MonoBehaviour {
 
     public void EnableOneRandom()
     {
-        for (int k = 0; k < 1; k++)
-        {
-            Monkeys[Random.Range(0, 20)].GetComponent<Monkey>().SetChosen(BigButtonPrefab);
-        }
+        Monkeys[Random.Range(0, 20)].GetComponent<Monkey>().SetChosen(BigButtonPrefab);
+        //for (int k = 0; k < 1; k++)
+        //{
+           
+        //}
     }
     public void DisableAll()
     {
-        for (int k = 0; k < 20; k++)
+        for (int k = 0; k < 19; k++)
         {
             Monkeys[k].GetComponent<Monkey>().SetNotChosen();
         }
@@ -49,6 +50,7 @@ public class Distribution : MonoBehaviour {
             int rdm = Random.Range(0, Sprites.Count);
             Players_images[i].sprite = Sprites[rdm];
         }
+       // Debug.Break();
         DisableAll();
         EnableOneRandom();
         Debug.Log("Random players and monkeys");

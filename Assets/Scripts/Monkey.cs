@@ -7,8 +7,7 @@ public class Monkey : MonoBehaviour {
     public MonkeyBigButton BigButton;
 	// Use this for initialization
 	void Start () {
-        BigButton = null;
-
+        
     }
 	
 	// Update is called once per frame
@@ -25,12 +24,14 @@ public class Monkey : MonoBehaviour {
         go.transform.SetAsLastSibling();
         BigButton = go.GetComponent<MonkeyBigButton>();
         BigButton.Monkey = this;
-        
+        go.transform.localScale = Vector3.one;
+
     }
 
     public void SetNotChosen()
     {
-        if (BigButton != null) Destroy(BigButton.gameObject);
+        if (BigButton != null)
+            DestroyImmediate(BigButton.gameObject);
         gameObject.SetActive(false);
         
     }

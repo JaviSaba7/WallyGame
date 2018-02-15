@@ -12,7 +12,7 @@ public class Menu : MonoBehaviour {
 
 
     public GameObject Buttons;
-    public GameSystem gameSystem;
+    //public GameSystem gameSystem;
     // Use this for initialization
     void Start ()
     {

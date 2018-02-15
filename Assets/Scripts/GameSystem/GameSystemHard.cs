@@ -38,7 +38,7 @@ public class GameSystemHard : MonoBehaviour {
     public bool startGame;
     public bool startToPlay;
     public GameObject characters;
-    public Distribution distribution;
+    public DistributionHard distribution;
     public GameObject reset;
 
     public float counter;

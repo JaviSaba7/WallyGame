@@ -38,7 +38,7 @@ public class GameSystemNormal : MonoBehaviour {
     public bool startGame;
     public bool startToPlay;
     public GameObject characters;
-    public Distribution distribution;
+    public DistributionNormal distribution;
     public GameObject reset;
 
     public float counter;

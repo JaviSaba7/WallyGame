@@ -38,7 +38,7 @@ public class GameSystemUltra : MonoBehaviour {
     public bool startGame;
     public bool startToPlay;
     public GameObject characters;
-    public Distribution distribution;
+    public DistributionUltra distribution;
     public GameObject reset;
 
     public float counter;

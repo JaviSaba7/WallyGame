@@ -292,6 +292,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Distribution.cs" />
+    <Compile Include="Assets\DistributionEasy.cs" />
+    <Compile Include="Assets\DistributionHard.cs" />
+    <Compile Include="Assets\DistributionNormal.cs" />
+    <Compile Include="Assets\DistributionTutorial.cs" />
+    <Compile Include="Assets\DistributionUltra.cs" />
     <Compile Include="Assets\Scripts\Detection.cs" />
     <Compile Include="Assets\Scripts\DetectMonkey.cs" />
     <Compile Include="Assets\Scripts\DetectOut.cs" />

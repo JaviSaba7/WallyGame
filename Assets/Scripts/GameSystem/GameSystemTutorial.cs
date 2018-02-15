@@ -50,6 +50,8 @@ public class GameSystemTutorial : MonoBehaviour {
     {
         score = 0;
         distribution.Randomize();
+        Debug.Log("RANDOM");
+
         startGame = true;
     }
 

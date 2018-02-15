@@ -1,11 +1,11 @@
 ﻿public interface IGameManager
 {
     float Score { get; }
-    //float ScoreNeeded { get; }
-    //float MaxScore { get; }
-    //bool MaxScoreReached { get; }
+    float ScoreNeeded { get; }
+    float MaxScore { get; }
+    bool MaxScoreReached { get; }
     int CurrentLevel { get; }
-    //int CurrentBooster { get; }
+    int CurrentBooster { get; }
 
 
     void Win();
@@ -14,7 +14,7 @@
 
     void StartGame(int level);
     void SetLevel(int level);
-    //void CatchedSponsor(int type, float value);
+    void CatchedSponsor(int type, float value);
     void RestartGame();
 
     void StartPractice();

@@ -29,7 +29,7 @@ public class Distribution : MonoBehaviour {
 
     public void EnableOneRandom()
     {
-        Monkeys[Random.Range(0, 20)].GetComponent<Monkey>().SetChosen(BigButtonPrefab);
+        Monkeys[Random.Range(0, 19)].GetComponent<Monkey>().SetChosen(BigButtonPrefab);
         //for (int k = 0; k < 1; k++)
         //{
            
@@ -53,7 +53,7 @@ public class Distribution : MonoBehaviour {
        // Debug.Break();
         DisableAll();
         EnableOneRandom();
-        Debug.Log("Random players and monkeys");
+        //Debug.Log("Random players and monkeys");
 
     }
 

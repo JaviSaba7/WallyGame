@@ -296,7 +296,13 @@
     <Compile Include="Assets\Scripts\DetectMonkey.cs" />
     <Compile Include="Assets\Scripts\DetectOut.cs" />
     <Compile Include="Assets\Scripts\DrawPath.cs" />
-    <Compile Include="Assets\Scripts\GameSystem.cs" />
+    <Compile Include="Assets\Scripts\GameSystem\GameSystem.cs" />
+    <Compile Include="Assets\Scripts\GameSystem\GameSystemEasy.cs" />
+    <Compile Include="Assets\Scripts\GameSystem\GameSystemHard.cs" />
+    <Compile Include="Assets\Scripts\GameSystem\GameSystemNormal.cs" />
+    <Compile Include="Assets\Scripts\GameSystem\GameSystemTutorial.cs" />
+    <Compile Include="Assets\Scripts\GameSystem\GameSystemUltra.cs" />
+    <Compile Include="Assets\Scripts\GameSystem\Menu.cs" />
     <Compile Include="Assets\Scripts\IGameManager.cs" />
     <Compile Include="Assets\Scripts\MaterialSwitcher.cs" />
     <Compile Include="Assets\Scripts\Monkey.cs" />

@@ -10,6 +10,12 @@ public class Menu : MonoBehaviour {
     public GameObject HardGameSystem;
     public GameObject UltraGameSystem;
 
+    public GameObject ClickTutorial;
+    public GameObject ClickNormal;
+    public GameObject ClickEasy;
+    public GameObject ClickHard;
+    public GameObject ClickUltra;
+
 
     public GameObject Buttons;
     //public GameSystem gameSystem;
@@ -29,7 +35,7 @@ public class Menu : MonoBehaviour {
     {
         Debug.Log("Practice Level enabled");
         PracticeGameSystem.SetActive(true);
-
+        ClickTutorial.SetActive(true);
         Buttons.SetActive(false);
     }
 
@@ -37,6 +43,7 @@ public class Menu : MonoBehaviour {
     {
         Debug.Log("Easy Level enabled");
         EasyGameSystem.SetActive(true);
+        ClickEasy.SetActive(true);
 
         Buttons.SetActive(false);
     }
@@ -45,6 +52,7 @@ public class Menu : MonoBehaviour {
     {
         Debug.Log("Normal Level enabled");
         NormalGameSystem.SetActive(true);
+        ClickNormal.SetActive(true);
 
         Buttons.SetActive(false);
     }
@@ -53,6 +61,7 @@ public class Menu : MonoBehaviour {
     {
         Debug.Log("Hard Level enabled");
         HardGameSystem.SetActive(true);
+        ClickHard.SetActive(true);
 
         Buttons.SetActive(false);
     }
@@ -61,6 +70,7 @@ public class Menu : MonoBehaviour {
     {
         Debug.Log("Ultra Level enabled");
         UltraGameSystem.SetActive(true);
+        ClickUltra.SetActive(true);
 
         Buttons.SetActive(false);
     }

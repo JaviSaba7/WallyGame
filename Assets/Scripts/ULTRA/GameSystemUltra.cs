@@ -9,6 +9,8 @@ public class GameSystemUltra : MonoBehaviour {
 
     public Menu selector;
 
+    public GameObject block;
+
     private static GameSystemUltra _instance;
 
     public static GameSystemUltra Instance
@@ -82,8 +84,13 @@ public class GameSystemUltra : MonoBehaviour {
             timeToStart = 3;
             startGame = false;
         }
+        if(timeToStart < 0.5)
+        {
+            counterToStartText.text = timeToStart.ToString("GO!");
 
-        if(startToPlay)
+        }
+
+        if (startToPlay)
         {
             gameTimeText.text = timeofGame.ToString("0");
             timeofGame -= Time.deltaTime;
@@ -94,11 +101,12 @@ public class GameSystemUltra : MonoBehaviour {
         if (timeofGame < 0.0f)
         {
             timeofGame = 0.0f;
-            reset.SetActive(true);
             //characters.SetActive(false);
             selector.ClickUltra.SetActive(false);
             //GameManagerWally.Instance.Win();
-            
+            block.SetActive(true); //Active a grey screen (blocking touch);
+            reset.SetActive(true); //Active the reset
+
 
         }
 

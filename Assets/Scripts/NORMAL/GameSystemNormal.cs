@@ -9,6 +9,8 @@ public class GameSystemNormal : MonoBehaviour {
 
     public Menu selector;
 
+    public GameObject block;
+
     private static GameSystemNormal _instance;
 
     public static GameSystemNormal Instance
@@ -82,8 +84,13 @@ public class GameSystemNormal : MonoBehaviour {
             timeToStart = 3;
             startGame = false;
         }
+        if (timeToStart < 0.5)
+        {
+            counterToStartText.text = timeToStart.ToString("GO!");
 
-        if(startToPlay)
+        }
+
+        if (startToPlay)
         {
             gameTimeText.text = timeofGame.ToString("0");
             timeofGame -= Time.deltaTime;
@@ -94,9 +101,10 @@ public class GameSystemNormal : MonoBehaviour {
         if (timeofGame < 0.0f)
         {
             timeofGame = 0.0f;
-            reset.SetActive(true);
             //characters.SetActive(false);
             selector.ClickNormal.SetActive(false);
+            block.SetActive(true); //Active a grey screen (blocking touch);
+            reset.SetActive(true); //Active the reset
 
             //GameManagerWally.Instance.WIn();
 

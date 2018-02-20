@@ -46,6 +46,7 @@ public class Menu : MonoBehaviour {
         ClickEasy.SetActive(true);
 
         Buttons.SetActive(false);
+
     }
 
     public void NormalLevel()
@@ -55,6 +56,7 @@ public class Menu : MonoBehaviour {
         ClickNormal.SetActive(true);
 
         Buttons.SetActive(false);
+
     }
 
     public void HardLevel()
@@ -64,6 +66,7 @@ public class Menu : MonoBehaviour {
         ClickHard.SetActive(true);
 
         Buttons.SetActive(false);
+
     }
 
     public void UltraLevel()
@@ -73,5 +76,6 @@ public class Menu : MonoBehaviour {
         ClickUltra.SetActive(true);
 
         Buttons.SetActive(false);
+
     }
 }

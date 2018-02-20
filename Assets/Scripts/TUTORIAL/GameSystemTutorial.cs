@@ -10,6 +10,8 @@ public class GameSystemTutorial : MonoBehaviour {
     public Menu selector;
     private static GameSystemTutorial _instance;
 
+    public GameObject block;
+
     public static GameSystemTutorial Instance
     {
         get
@@ -83,8 +85,13 @@ public class GameSystemTutorial : MonoBehaviour {
             timeToStart = 3;
             startGame = false;
         }
+        if (timeToStart < 0.5)
+        {
+            counterToStartText.text = timeToStart.ToString("GO!");
 
-        if(startToPlay)
+        }
+
+        if (startToPlay)
         {
             gameTimeText.text = timeofGame.ToString("0");
             timeofGame -= Time.deltaTime;
@@ -95,8 +102,9 @@ public class GameSystemTutorial : MonoBehaviour {
         if (timeofGame < 0.0f)
         {
             timeofGame = 0.0f;
-            reset.SetActive(true);
             selector.ClickTutorial.SetActive(false);
+            block.SetActive(true); //Active a grey screen (blocking touch);
+            reset.SetActive(true); //Active the reset
             //characters.SetActive(false);
             //GameManagerWally.Instance.WIn();
 

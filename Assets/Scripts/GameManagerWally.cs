@@ -6,6 +6,8 @@ public class GameManagerWally : MonoBehaviour
 {
     public GameManagerWally _instance;
 
+    //public GameObject block;
+
     public GameManagerWally Instance
     {
         get
@@ -25,23 +27,51 @@ public class GameManagerWally : MonoBehaviour
             return _instance;
         }
     }
-
-    public float Score { get; }
+    /*
+    float Score { get; }
     float ScoreNeeded { get; }
     float MaxScore { get; }
     bool MaxScoreReached { get; }
     int CurrentLevel { get; }
     int CurrentBooster { get; }
+    */
+    public void Win()
+    {
 
-    public void Win();
+    }
 
-    public void Loose();
+    public void Loose()
+    {
 
-    public void StartGame(int level);
-    public void SetLevel(int level);
-    public void CatchedSponsor(int type, float value);
-    public void RestartGame();
+    }
 
-    public void StartPractice();
-    public void SetAudio();
+    public void StartGame(int level)
+    {
+
+    }
+
+    public void SetLevel(int level)
+    {
+
+    }
+
+    public void CatchedSponsor(int type, float value)
+    {
+
+    }
+
+    public void RestartGame()
+    {
+
+    }
+
+    public void StartPractice()
+    {
+
+    }
+
+    public void SetAudio()
+    {
+
+    }
 }

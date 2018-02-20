@@ -103,7 +103,7 @@ public class GameSystemUltra : MonoBehaviour {
             timeofGame = 0.0f;
             //characters.SetActive(false);
             selector.ClickUltra.SetActive(false);
-            //GameManagerWally.Instance.Win();
+            GameManagerWally.Instance.Win();
             block.SetActive(true); //Active a grey screen (blocking touch);
             reset.SetActive(true); //Active the reset
 

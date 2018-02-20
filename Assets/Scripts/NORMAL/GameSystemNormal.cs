@@ -106,7 +106,7 @@ public class GameSystemNormal : MonoBehaviour {
             block.SetActive(true); //Active a grey screen (blocking touch);
             reset.SetActive(true); //Active the reset
 
-            //GameManagerWally.Instance.WIn();
+            GameManagerWally.Instance.WIn();
 
         }
 

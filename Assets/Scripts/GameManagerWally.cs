@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManagerWally : MonoBehaviour
+public class GameManagerWally : MonoBehaviour, IGameManager
 {
-    public GameManagerWally _instance;
+    public static GameManagerWally _instance;
 
-    //public GameObject block;
-
-    public GameManagerWally Instance
+    public static GameManagerWally Instance
     {
         get
         {
@@ -27,14 +25,25 @@ public class GameManagerWally : MonoBehaviour
             return _instance;
         }
     }
-    /*
-    float Score { get; }
-    float ScoreNeeded { get; }
-    float MaxScore { get; }
-    bool MaxScoreReached { get; }
-    int CurrentLevel { get; }
-    int CurrentBooster { get; }
-    */
+
+    public float Score
+    {
+        get
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+
+    public float ScoreNeeded { get { return 0; } }
+
+    public float MaxScore { get { return 0; } }
+
+    public bool MaxScoreReached { get { return false; } }
+
+    public int CurrentLevel { get { return 0; } }
+
+    public int CurrentBooster { get { return 0; } }
+
     public void Win()
     {
 

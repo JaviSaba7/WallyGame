@@ -104,7 +104,7 @@ public class GameSystemHard : MonoBehaviour {
             block.SetActive(true); //Active a grey screen (blocking touch);
             reset.SetActive(true); //Active the reset
             selector.ClickHard.SetActive(false);
-            //GameManagerWally.Instance.WIn();
+            GameManagerWally.Instance.WIn();
 
         }
 

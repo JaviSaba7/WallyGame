@@ -105,7 +105,7 @@ public class GameSystemEasy : MonoBehaviour {
             reset.SetActive(true); //Active the reset
 
             selector.ClickEasy.SetActive(false);
-            //GameManagerWally.Instance.WIn();
+            GameManagerWally.Instance.WIn();
 
         }
 

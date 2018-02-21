@@ -35,7 +35,7 @@ public class GameSystemNormal : MonoBehaviour {
 
     public float timeToStart = 3.0f;
     public float timeofGame = 30.0f;
-    public float score;
+    public float score = 8;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI counterToStartText;
     public TextMeshProUGUI gameTimeText;
@@ -44,6 +44,7 @@ public class GameSystemNormal : MonoBehaviour {
     public GameObject characters;
     public DistributionNormal distribution;
     public GameObject reset;
+    public float scoreForWin = 8;
 
     public float counter;
     public bool turnOff = false;
@@ -52,7 +53,7 @@ public class GameSystemNormal : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        score = 0;
+        score = scoreForWin;
         distribution.Randomize();
         startGame = true;
     }
@@ -106,8 +107,8 @@ public class GameSystemNormal : MonoBehaviour {
             block.SetActive(true); //Active a grey screen (blocking touch);
             reset.SetActive(true); //Active the reset
 
-            GameManagerWally.Instance.WIn();
-
+            if(score <= 0) GameManagerWally.Instance.Win();
+            if(score > 0) GameManagerWally.Instance.Loose();
         }
 
         scoreText.text = score.ToString("");
@@ -120,7 +121,7 @@ public class GameSystemNormal : MonoBehaviour {
         particleWin.SetActive(true);
         turnOff = true;
         distribution.Randomize();
-        score += 1;
+        score -= 1;
     }
 }
     

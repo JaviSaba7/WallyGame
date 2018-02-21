@@ -35,7 +35,7 @@ public class GameSystemUltra : MonoBehaviour {
 
     public float timeToStart = 3.0f;
     public float timeofGame = 30.0f;
-    public float score;
+    public float score = 4;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI counterToStartText;
     public TextMeshProUGUI gameTimeText;
@@ -44,6 +44,7 @@ public class GameSystemUltra : MonoBehaviour {
     public GameObject characters;
     public DistributionUltra distribution;
     public GameObject reset;
+    public float scoreForWin = 4;
 
     public float counter;
     public bool turnOff = false;
@@ -52,7 +53,7 @@ public class GameSystemUltra : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        score = 0;
+        score = scoreForWin;
         distribution.Randomize();
         startGame = true;
     }
@@ -103,10 +104,11 @@ public class GameSystemUltra : MonoBehaviour {
             timeofGame = 0.0f;
             //characters.SetActive(false);
             selector.ClickUltra.SetActive(false);
-            GameManagerWally.Instance.Win();
             block.SetActive(true); //Active a grey screen (blocking touch);
             reset.SetActive(true); //Active the reset
 
+            if(score <= 0) GameManagerWally.Instance.Win();
+            if(score > 0) GameManagerWally.Instance.Loose();
 
         }
 
@@ -120,7 +122,7 @@ public class GameSystemUltra : MonoBehaviour {
         particleWin.SetActive(true);
         turnOff = true;
         distribution.Randomize();
-        score += 1;
+        score -= 1;
     }
 }
     

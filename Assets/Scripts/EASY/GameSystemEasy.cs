@@ -44,7 +44,7 @@ public class GameSystemEasy : MonoBehaviour {
     public GameObject characters;
     public DistributionEasy distribution;
     public GameObject reset;
-
+    public float scoreForWin = 10;
     public float counter;
     public bool turnOff = false;
     public GameObject particleWin;
@@ -52,7 +52,7 @@ public class GameSystemEasy : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        score = 0;
+        score = scoreForWin;
         distribution.Randomize();
         startGame = true;
     }
@@ -105,8 +105,8 @@ public class GameSystemEasy : MonoBehaviour {
             reset.SetActive(true); //Active the reset
 
             selector.ClickEasy.SetActive(false);
-            GameManagerWally.Instance.WIn();
-
+            if(score <= 0) GameManagerWally.Instance.Win();
+            if(score > 0) GameManagerWally.Instance.Loose();
         }
 
         scoreText.text = score.ToString("");
@@ -119,7 +119,7 @@ public class GameSystemEasy : MonoBehaviour {
         particleWin.SetActive(true);
         turnOff = true;
         distribution.Randomize();
-        score += 1;
+        score -= 1;
     }
 }
     

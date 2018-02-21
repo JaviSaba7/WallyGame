@@ -31,8 +31,9 @@ public class Menu : MonoBehaviour {
 		
 	}
 
-    public void PracticeLevel()
+    public void TutorialLevel()
     {
+        GameManagerWally.Instance.StartGame(1);
         Debug.Log("Practice Level enabled");
         PracticeGameSystem.SetActive(true);
         ClickTutorial.SetActive(true);
@@ -41,6 +42,7 @@ public class Menu : MonoBehaviour {
 
     public void EasyLevel()
     {
+        GameManagerWally.Instance.StartGame(2);
         Debug.Log("Easy Level enabled");
         EasyGameSystem.SetActive(true);
         ClickEasy.SetActive(true);
@@ -51,6 +53,7 @@ public class Menu : MonoBehaviour {
 
     public void NormalLevel()
     {
+        GameManagerWally.Instance.StartGame(3);
         Debug.Log("Normal Level enabled");
         NormalGameSystem.SetActive(true);
         ClickNormal.SetActive(true);
@@ -61,6 +64,7 @@ public class Menu : MonoBehaviour {
 
     public void HardLevel()
     {
+        GameManagerWally.Instance.StartGame(4);
         Debug.Log("Hard Level enabled");
         HardGameSystem.SetActive(true);
         ClickHard.SetActive(true);
@@ -71,6 +75,7 @@ public class Menu : MonoBehaviour {
 
     public void UltraLevel()
     {
+        GameManagerWally.Instance.StartGame(5);
         Debug.Log("Ultra Level enabled");
         UltraGameSystem.SetActive(true);
         ClickUltra.SetActive(true);

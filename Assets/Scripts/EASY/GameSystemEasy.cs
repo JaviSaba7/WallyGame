@@ -32,7 +32,8 @@ public class GameSystemEasy : MonoBehaviour {
             return _instance;
         }
     }
-
+    public bool stopTime = false;
+    public GameObject blockWin;
     public float timeToStart = 3.0f;
     public float timeofGame = 30.0f;
     public float score;
@@ -90,14 +91,29 @@ public class GameSystemEasy : MonoBehaviour {
 
         }
 
-        if (startToPlay)
+        if (stopTime == false)
         {
-            gameTimeText.text = timeofGame.ToString("0");
-            timeofGame -= Time.deltaTime;
-            characters.SetActive(true);
-            
+            if (startToPlay)
+            {
+                gameTimeText.text = timeofGame.ToString("0");
+                timeofGame -= Time.deltaTime;
+                characters.SetActive(true);
+
+            }
         }
 
+        //WIN CONDITION
+        if (score <= 0)
+        {
+            GameManagerWally.Instance.Win();
+            //characters.SetActive(false);
+            selector.ClickUltra.SetActive(false);
+            blockWin.SetActive(true); //Active a grey screen (blocking touch);
+            reset.SetActive(true); //Active the reset
+            stopTime = true;
+        }
+
+        //LOSE CONDITION
         if (timeofGame < 0.0f)
         {
             timeofGame = 0.0f;
@@ -105,8 +121,8 @@ public class GameSystemEasy : MonoBehaviour {
             reset.SetActive(true); //Active the reset
 
             selector.ClickEasy.SetActive(false);
-            if(score <= 0) GameManagerWally.Instance.Win();
-            if(score > 0) GameManagerWally.Instance.Loose();
+          
+            GameManagerWally.Instance.Loose();
         }
 
         scoreText.text = score.ToString("");

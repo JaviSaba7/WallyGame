@@ -31,6 +31,7 @@ public class GameSystemTutorial : MonoBehaviour {
             return _instance;
         }
     }
+    public GameObject blockWin;
 
     public float timeToStart = 3.0f;
     public float timeofGame = 30.0f;
@@ -103,7 +104,7 @@ public class GameSystemTutorial : MonoBehaviour {
         {
             timeofGame = 0.0f;
             selector.ClickTutorial.SetActive(false);
-            block.SetActive(true); //Active a grey screen (blocking touch);
+            blockWin.SetActive(true); //Active a grey screen (blocking touch);
             reset.SetActive(true); //Active the reset
             //characters.SetActive(false);
             GameManagerWally.Instance.Win();

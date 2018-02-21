@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WallyGame.unity
+- path: Assets/WhereIsMonkey.unity
   isLoaded: 1
   isActive: 1
